@@ -1,10 +1,10 @@
 ## TABLE OF CONTENTS
 
-- [ROUGH INTRODUCTION](#introduction)
+1. [INTRODUCTION](#introduction)
 
-- [TERMINOLOGIES](#terminologies)
+2. [TERMINOLOGIES](#terminologies)
 
-- [REFERENCES](#references)
+3. [REFERENCES](#references)
 
 ## INTRODUCTION
 
@@ -66,3 +66,8 @@ NB: Every Exam after the first one becomes 50%
 - [Getting Started with AWS (Playlist)](https://www.youtube.com/watch?v=a9__D53WsUs&list=PLhr1KZpdzukf4p57gUnTyToXYJxGAPx03)
 - [The BEST AWS Certification Roadmap 2026 (Updated + AI)](https://youtu.be/fQn24oajC0U?si=wjantJq0UxoJan_Z)
 - [AWS Certification](https://aws.amazon.com/certification/)
+- [AWS Certification Paths](https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/certification/approved/pdfs/AWS_certification_paths.pdf)
+- [Solutions Architect Pro vs DevOps Pro: Which AWS Certification Should You Take?](https://www.jeeviacademy.com/solutions-architect-pro-vs-devops-pro-which-aws-certification-should-you-take/)
+- [SA Pro vs DevOps Pro - Which is of more value?](https://www.reddit.com/r/AWSCertifications/comments/nejicb/sa_pro_vs_devops_pro_which_is_of_more_value/)
+- [Exam Guide (DOP-C02)](https://docs.aws.amazon.com/pdfs/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.pdf)
+- [Exam Guide (SAP-C02)](https://docs.aws.amazon.com/pdfs/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.pdf)
