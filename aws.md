@@ -4,7 +4,14 @@
 
 2. [TERMINOLOGIES](#terminologies)
 
-3. [REFERENCES](#references)
+3. [SCHEME/GUIDELINE](#schemeguideline)
+
+4. [REFERENCES](#references)
+
+<br>
+<br>
+<br>
+<br>
 
 ## INTRODUCTION
 
@@ -20,6 +27,8 @@
 - Different regions can have different pricing.
 - Generally, the regions in the US and Europe are the most affordable, other than US-West 1.
 - Bes sure to set a spending limit on your account.
+
+<br>
 
 ### Certifications
 
@@ -45,6 +54,8 @@ AWS IT Certifications are grouped across 4 levels
   - Advanced Networking
   - Security
 
+<br>
+
 #### Cost
 
 - Foundational - $100
@@ -53,12 +64,102 @@ AWS IT Certifications are grouped across 4 levels
 
 NB: Every Exam after the first one becomes 50%
 
+<br>
+<br>
+<br>
+<br>
+
+## SCHEME/GUIDELINE
+
+This scheme uses SAP-CO2 as the scope for the learning pathway
+
+<br>
+
+### Content Domains
+
+1. Design Solutions for Organizational Complexity
+   - Architect Network Connectivity Strategies
+   - Prescribe Security Controls
+   - Design reliable and resilient architectures
+   - Design a multi-account AWS environment
+   - Determine Cost Optimization and visibility strategies
+
+2. Design for new Solutions
+   - Design a deployment strategy to meet business requirements
+   - Design a solution to ensure business continuity
+   - Determine security controls based on requirements
+   - Design a strategy to meet reliability requirements
+   - Design a solution to meet performance objectives
+   - Determine a cost optimization strategy to meet solution goals and objectives
+
+3. Continous Improvement for Existing Solutions
+   - Determine a Strategy to improve overall operational excellence
+   - Determine a strategy to improve security
+   - Determine a strategy to improve performance
+   - Determine a strategy to improve reliability
+   - Identify opportunities for cost optimizations.
+
+4. Accelerate Workload Migration and Modernization
+   - Select existing workloads and processes for potential migration
+   - Determine the optimal migration approach for existing workloads
+   - Determine a new architecture for existing workloads
+   - Determine opportunities for modernization and enhancements
+
+<br>
+
+### AWS Services, Technologies and Concepts
+
+1. Technologies and Concepts
+   - Compute
+   - Cost Management
+   - Database
+   - Disaster recovery
+   - High availability
+   - Management and governance
+   - Microservices and component decoupling
+   - Migration and data transfer
+   - Network, connectivity and content delivery
+   - Security
+   - Serverless design principles
+   - Storage
+
+2. In-scope AWS Services
+   - Analytics
+   - Application Integration
+   - Blockchain
+   - Business Applications
+   - Cloud Financial Management
+   - Compute
+   - Containers
+   - Database
+   - Developer tools
+   - End User Computing
+   - Frontend Web and Mobile
+   - Internet of Things (IoT)
+   - Machine Learning
+   - Media Services
+   - Management and Governance
+   - Migration and Transfer
+   - Network and Content Delivery
+   - Security, Identity and Compliance
+   - Storage
+
+<br>
+<br>
+<br>
+<br>
+
 ## TERMINOLOGIES
 
 - S3 Storage: Good Place to store files
 - RDS Databases
 - Bucket Policy
 - Load balancer
+
+<br>
+<br>
+<br>
+<br>
 
 ## REFERENCES
 
