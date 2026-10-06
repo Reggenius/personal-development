@@ -111,6 +111,29 @@ AWS IT Certifications are grouped across 4 levels
 NB: Every Exam after the first one becomes 50%
 
 <br>
+
+### EC2 = Elastic Compute Cloud
+
+- EC2 is an AWS service for renting virtual servers in the cloud.
+- Instance is a running virtual server.
+- AMI: Amazon machine image: Prebuilt OS along with software template that you can pick when lauching an instance.
+- EBS (Elastic Block Store): full system block storage that you can attach to an instance.
+- A key pair consisting of a public and a private key, is a set of security credentials that you use to prove your identity when connecting to an Amazon EC2 instance.
+- When you install Ubuntu, you get one default user - `ubuntu`.
+
+<br>
+
+### Storage on AWS
+
+Three Categories:
+
+- Object Storage - S3 (Simple Storage Service)
+  - Bucket is like a container at the root level of S3. Every file you store in S3 must go into a bucket.
+  - You can use S3 buckets to host static websites.
+- Block Storage - EBS
+- File Storage - EFS
+
+<br>
 <br>
 <br>
 <br>
