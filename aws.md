@@ -114,7 +114,7 @@ NB: Every Exam after the first one becomes 50%
 
 ### EC2 = Elastic Compute Cloud
 
-- EC2 is an AWS service for renting virtual servers in the cloud.
+- **EC2** is an AWS service for renting virtual servers in the cloud.
 - Instance is a running virtual server.
 - AMI: Amazon machine image: Prebuilt OS along with software template that you can pick when lauching an instance.
 - EBS (Elastic Block Store): full system block storage that you can attach to an instance.
@@ -130,8 +130,15 @@ Three Categories:
 - Object Storage - S3 (Simple Storage Service)
   - Bucket is like a container at the root level of S3. Every file you store in S3 must go into a bucket.
   - You can use S3 buckets to host static websites.
-- Block Storage - EBS
+  - Bucket versioning is a way S3 bucket keeps multiple versions of an object in the same bucket.
+- Block Storage - EBS, RDS
 - File Storage - EFS
+
+### IP Addresses in AWS
+
+- **Private IP:** Allocated to every instance created. Used for communication within AWS only.
+- **Public IP:** Accessible in the internet.
+- **Elastic IP:** Static, won't change even if you restart the instance.
 
 <br>
 <br>
