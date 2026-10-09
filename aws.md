@@ -127,18 +127,27 @@ NB: Every Exam after the first one becomes 50%
 
 Three Categories:
 
-- Object Storage - S3 (Simple Storage Service)
+- **Object Storage** - S3 (Simple Storage Service)
   - Bucket is like a container at the root level of S3. Every file you store in S3 must go into a bucket.
   - You can use S3 buckets to host static websites.
   - Bucket versioning is a way S3 bucket keeps multiple versions of an object in the same bucket.
-- Block Storage - EBS, RDS
-- File Storage - EFS
+- **Block Storage** - EBS, RDS
+- **File Storage** - EFS
 
 ### IP Addresses in AWS
 
 - **Private IP:** Allocated to every instance created. Used for communication within AWS only.
 - **Public IP:** Accessible in the internet.
 - **Elastic IP:** Static, won't change even if you restart the instance.
+
+### VPC - Virtual Private Cloud
+- A Form of a Seperation of networks with each having it's own instances, services etc within the same user account. 
+- Subnets: Grouping/segmentation inside a VPC
+  - Private Subnet: Can't communicate in the internet (within)
+  - Public Subnet: Instances can communicate with the internet
+- Range of Public IP (Optional) and Private IPs are assigned to VPCs
+- Route Tables
+
 
 <br>
 <br>
