@@ -141,13 +141,40 @@ Three Categories:
 - **Elastic IP:** Static, won't change even if you restart the instance.
 
 ### VPC - Virtual Private Cloud
-- A Form of a Seperation of networks with each having it's own instances, services etc within the same user account. 
+
+- A Form of a Seperation of networks with each having it's own instances, services etc within the same user account.
 - Subnets: Grouping/segmentation inside a VPC
   - Private Subnet: Can't communicate in the internet (within)
   - Public Subnet: Instances can communicate with the internet
 - Range of Public IP (Optional) and Private IPs are assigned to VPCs
 - Route Tables
+- NAT (Network Address Translation) Gateway: Enables instances in the private subnet to interact/communicate with the internet (mainly outbound traffic)
+- IGW (Internet Gateway): Similar to NAT but for public subnets (inbound and outbound).
+- Route Tables: Determines how Traffic flows within the VPC
+  - **0.0.0.0/0** - All IP addresses (Wildcard)
 
+### CIDR - Classless Inter-Domain Routing
+
+- IP Address
+  Network Bits: tells where the device is hosted in the global IP system
+  Host Bits: tells which device in that network
+  Prefix length (/N): defines the split between network and host bits.
+- CIDR: Base IP address (Network address) / Prefix Length (Indicated how many bits are used for network) e.g 192.168.1.10/24
+  - `<IP-address>/<prefix-length>`
+
+$$
+\text{Number of IPs} = 2^{{\text{Total Bits} - \text{Prefix Length}}}
+$$
+
+$$
+\text{Usable Hosts} =
+\begin{cases}
+2^{(\text{Total Bits} - \text{Prefix Length})} - 2 & \text{for IPv4} \\
+2^{(128 - \text{Prefix Length})} & \text{for IPv6}
+\end{cases}
+$$
+
+- [IP Calculator/Breakdown](https://jodies.de/ipcalc)
 
 <br>
 <br>
