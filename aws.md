@@ -155,6 +155,7 @@ Three Categories:
 
 ### CIDR - Classless Inter-Domain Routing
 
+- CIDR is used to define IP ranges within a particular network
 - IP Address
   Network Bits: tells where the device is hosted in the global IP system
   Host Bits: tells which device in that network
@@ -175,6 +176,13 @@ $$
 $$
 
 - [IP Calculator/Breakdown](https://jodies.de/ipcalc)
+
+### CIDR + VPC on AWS
+
+- When creating a public subnet, it is only made public when the route is added to the Route Table, which connects that subnet to the IGW.
+- Every VPC has one main route table which is auto-deleted whenever the VPC is deleted.
+
+### AWS CLI
 
 <br>
 <br>
