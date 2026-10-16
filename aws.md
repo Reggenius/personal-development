@@ -184,6 +184,12 @@ $$
 
 ### AWS CLI
 
+### SERVERLESS
+
+- Serverless doesn't mean no servers exist; it means you don't manage the servers
+- Lambda - example of serverless service offered by AWS
+- API Gateway is also a service in AWS
+
 <br>
 <br>
 <br>
