@@ -29,6 +29,7 @@
 - Different regions can have different pricing.
 - Generally, the regions in the US and Europe are the most affordable, other than US-West 1.
 - Bes sure to set a spending limit on your account (AWS Budget).
+- Always confirm location whenever you are creating a service in AWS.
 
 <br>
 
@@ -184,11 +185,27 @@ $$
 
 ### AWS CLI
 
+### AWS TOOLKIT VSCODE EXTENSION
+
 ### SERVERLESS
 
 - Serverless doesn't mean no servers exist; it means you don't manage the servers
 - Lambda - example of serverless service offered by AWS
 - API Gateway is also a service in AWS
+
+### LAMBDA LAYERS
+
+- Reusable code libraries you can attach to multiple lambda functions
+
+### DOCKER
+
+- You can host your docker image(s) on a Registry
+- Docker images hosted on a Registry can be private or public
+- **AWS ECR (Elastic Container Registry)**: a Docker container registry on AWS; a way to host your images on AWS
+- **AWS ECS (Elastic Container Service)**: a Container orchetsration service; helps you run your images in the cloud.
+- **AWS Fargate**: a launch type for ECS that runs containers serverlessly.
+- APP -> ECR -> ECS -> [Fargate or EC2 or ...]
+- **Cluster**: a logical group of an environment where your containers can run.
 
 <br>
 <br>
