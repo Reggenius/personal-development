@@ -6,7 +6,9 @@
 
 3. [SCHEME/GUIDELINE](#schemeguideline)
 
-4. [REFERENCES](#references)
+4. [DESIGN SOLUTIONS FOR ORGANIZATIONAL COMPLEXITY](#design-solutions-for-organizational-complexity)
+
+5. [REFERENCES](#references)
 
 <br>
 <br>
@@ -294,18 +296,77 @@ This scheme uses SAP-CO2 as the scope for the learning pathway
 <br>
 <br>
 
+## DESIGN SOLUTIONS FOR ORGANIZATIONAL COMPLEXITY
+
+- Architect Network Connectivity Strategies: Who/what can communicate with whom?
+- Prescribe Security Controls: Who/what is allowed to do what, and how do we detect/prevent violations?
+- Design reliable and resilient architectures: What happens when something fails?
+- Design a multi-account AWS environment: Where should workloads, people, security boundaries and responsibilities live?
+- Determine Cost Optimization and visibility strategies: What are we spending, why, who owns it and is the spend justified?
+
+  | REQUIREMENT                                   | LIKELY SOLUTION  |
+  | --------------------------------------------- | ---------------- |
+  | Two simple VPCs                               | VPC Peering      |
+  | Many VPCs in a region                         | Transit Gateway  |
+  | Global enterprise network                     | Cloud WAN        |
+  | Private AWS ↔ datacenter                      | Direct Connect   |
+  | Encrypted backup connectivity                 | Site-to-Site VPN |
+  | Expose a private service across VPCs/accounts | PrivateLink      |
+  | Service-to-service/application connectivity   | VPC Lattice      |
+
+- AWS Security starts heavily with identity:
+  - WHO?
+    - Human
+    - Application
+    - AWS service
+    - External system
+
+  - WHAT?
+    - Read
+    - Write
+    - Delete
+    - Admin
+
+  - WHERE?
+    - Account
+    - Region
+    - Resource
+
+- IAM Policies - Actual/granted rights; What can this identity do?
+- SCP (Service Control Policies) - possible grantable rights; What can this account ever be allowed to do?
+- Prevent - Detect - Respond - Learn - Improve
+- Data States:
+  - At rest
+  - In Transit
+  - In use
+- Availability - Is the system accessible when users need it?
+- Reliability - Does the system perform it's intended function?
+- Resilience - Can the system withstand and recover from failures?
+- Assume failure -> Design for failure -> Automate recovery -> Test recovery
+- Decoupling - asynchronously divide independent services in a process/request such that the failure of one does not nullify others
+- Recovery Time Objective (RTO) - How quickly must the system be restored?
+- Recovery Point Objective (RPO) - How much data loss can the organization tolerate?
+
+<br>
+<br>
+<br>
+<br>
+
 ## TERMINOLOGIES
 
 <br>
 
-- Amazon EC2 (Elastic Compute Cloud): Virtual Server that AWS has
+- ACL: Access Control List
 - Availability Zones (AZs) - Backup
 - Bucket Policy
-- Hardening means making an account, system or an application more secure by reducing it's weakness.
-- Load balancer
+- EC2 (Elastic Compute Cloud): Virtual Server that AWS has
+- Hardening: making an account, system or an application more secure by reducing it's weakness.
+- Load balancer: a hardware device, software application or cloud service that distributes incoming network or application traffic across multiple backend servers.
 - Region: Group of availability zones in a given geographic area
 - RDS Databases
 - S3 Storage: Good Place to store files
+- WAF: Web Application Firewall
+- KMS - Key Management Service/System
 
 <br>
 <br>
